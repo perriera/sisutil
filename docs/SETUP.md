@@ -6,7 +6,7 @@
  3. **THEN** we can press Ctrl-B inside Visual Studio Code
 
 ### Prerequisites
-  - [How to clone your project (with this template)](https://github.com/perriera/extras_cpp/blob/dev/docs/CLONE.md)
+  - [How to clone your project (with this template)](https://github.com/perriera/sisutil/blob/dev/docs/CLONE.md)
 
  
 ### Wish Case
@@ -47,6 +47,6 @@ Now that you have your project cloned we need to make sure you have the tools ne
 Now you have all the tools necessary to compile your new C++17 project complete with cmake 3.21 support. Press Ctrl-B (inside Visual Studio Code) to see your first successful compile.
 
 ### Next Steps
- - [How to setup your changelog.md](https://github.com/perriera/extras_cpp/blob/dev/docs/CHANGELOG.md)
+ - [How to setup your changelog.md](https://github.com/perriera/sisutil/blob/dev/docs/CHANGELOG.md)
 
 

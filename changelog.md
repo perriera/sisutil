@@ -5,8 +5,8 @@
 > and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).</br>
 > To add a tag to the git repository do:
 >
-> > git tag -a v0.1.0 -m "Using extras 5.25"</br>
-> > git push origin v0.1.0
+> > git tag -a v0.2.0 -m "Rebranded sisutil"</br>
+> > git push origin v0.2.0
 
 IMPORTANT:
 
@@ -36,7 +36,7 @@ Updated README.md accordingly</br>
 
 ### Changed
 
-- extras_cpp created from template
+- sisutil created from template
 
 #### 0.1.0 (2021-09-03)
 
@@ -62,7 +62,7 @@ Updated README.md accordingly</br>
 - spdlog is now used as a shared library, (libspdlog.so)
 - cpr is now used as a shared library, (libcpr.so)
 - placed all source into /src
-- placed all headers into /include/extras_cpp
+- placed all headers into /include/sisutil
 
 #### 0.1.0 (2021-08-26)
 
@@ -98,6 +98,6 @@ Updated README.md accordingly</br>
 
 - Conan package manager deprecated
 
-[unreleased]: https://github.com/perriera/extras_cpp/compare/v0.2.0...HEAD
-[0.2.0]: https://github.com/perriera/extras_cpp/compare/v0.1.0...v0.2.0
-[0.1.0]: https://github.com/perriera/extras_cpp/releases/tag/v0.1.0
+[unreleased]: https://github.com/perriera/sisutil/compare/v0.2.0...HEAD
+[0.2.0]: https://github.com/perriera/sisutil/compare/v0.1.0...v0.2.0
+[0.1.0]: https://github.com/perriera/sisutil/releases/tag/v0.1.0

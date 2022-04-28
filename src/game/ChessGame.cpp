@@ -16,12 +16,12 @@
  *
  */
 
-#include <extras_cpp/game/ChessGame.hpp>
+#include <sisutil/game/ChessGame.hpp>
 #include <extras/interfaces.hpp>
 #include <iostream>
 
 using namespace std;
-using namespace extras;
+using namespace util;
 
 void cpp::ChessGame::moves() const {}
 
