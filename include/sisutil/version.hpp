@@ -31,7 +31,7 @@
  */
 
 #define SISUTIL_VER_MAJOR 0
-#define SISUTIL_VER_MINOR 3
+#define SISUTIL_VER_MINOR 4
 #define SISUTIL_VER_PATCH 0
 
 #define SISUTIL_VERSION \

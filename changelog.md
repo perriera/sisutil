@@ -5,8 +5,8 @@
 > and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).</br>
 > To add a tag to the git repository do:
 >
-> > git tag -a v0.3.0 -m "Rebranded sisutil"</br>
-> > git push origin v0.3.0
+> > git tag -a v0.4.0 -m "Migrated source"</br>
+> > git push origin v0.4.0
 
 IMPORTANT:
 
@@ -32,22 +32,20 @@ Adding mock test cases </br>
 Adding unit test cases </br>
 Updated README.md accordingly</br>
 
-#### 0.3.0 (2021-04-30)
-
+#### 0.4.0 (2021-05-01)
 ### Added
+- Migrated source
 
+#### 0.3.0 (2021-04-30)
+### Added
 - Error.hpp
 
 #### 0.2.0 (2021-MM-DD)
-
 ### Changed
-
 - sisutil created from template
 
 #### 0.1.0 (2021-09-03)
-
 ### Added
-
 - SHARED library support
 - (perriera) extras library support, (3.11.0)
 - CPM.cmake support
@@ -62,7 +60,6 @@ Updated README.md accordingly</br>
   - This gives us the ability to test C++ classes, (during implementation)
 
 ### Changed
-
 - CMakeLists.txt
   - [ModernCppStarter](https://github.com/TheLartians/ModernCppStarter/blob/master/LICENSE)
 - spdlog is now used as a shared library, (libspdlog.so)
@@ -71,9 +68,7 @@ Updated README.md accordingly</br>
 - placed all headers into /include/sisutil
 
 #### 0.1.0 (2021-08-26)
-
 ### Added
-
 - Fetch_Content support
 - changelog.md
 - Project VERSION inside CMakeLists.txt & changelog.md
@@ -86,25 +81,20 @@ Updated README.md accordingly</br>
 - extra/interfaces.hpp support
 - Unit test casses support, (Catch2)
 - Mock framework support, (FakeIt)
-
 ### Changed
-
 - CMakeLists.txt revamped & streamlined
 - README.md revamped & streamlined
 - Added documentation on code
 - cxx_std_17 on all targets
 - std::filesystem on all targets
-
 ### Maintained
-
 - @brief style formatting
 - Doxygen support
-
 ### Removed
-
 - Conan package manager deprecated
 
-[unreleased]: https://github.com/perriera/sisutil/compare/v0.3.0...HEAD
+[unreleased]: https://github.com/perriera/sisutil/compare/v0.4.0...HEAD
+[0.4.0]: https://github.com/perriera/sisutil/compare/v0.3.0...v0.4.0
 [0.3.0]: https://github.com/perriera/sisutil/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/perriera/sisutil/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/perriera/sisutil/releases/tag/v0.1.0
