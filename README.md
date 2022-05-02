@@ -27,3 +27,9 @@ Welcome to the **(perriera) / sisutil** project.
 > Copyright 2022 EXPARX INCORPORATED ([exparx.com](https://www.exparx.com/))<br/>
 > [Open Source / MIT License](https://opensource.org/licenses/MIT) (see [LICENSE.md](https://github.com/perriera/sisutil/blob/dev/LICENSE.md))<br/>
 
+### Special Instructions
+
+#!/usr/bin/env bash
+
+apt-get install uuid-dev
+

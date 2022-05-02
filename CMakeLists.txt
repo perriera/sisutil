@@ -153,7 +153,7 @@ file(GLOB_RECURSE SISUTIL_SOURCE CONFIGURE_DEPENDS "${SOURCES}/*.cpp")
 
 add_library(${PROJECT_NAME} SHARED ${SISUTIL_HEADERS} ${SISUTIL_SOURCE})
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/include" ${ORACLE_INCLUDE})
-target_link_libraries(${PROJECT_NAME} PRIVATE stdc++fs extras Threads::Threads)
+target_link_libraries(${PROJECT_NAME} PRIVATE stdc++fs extras Threads::Threads uuid)
 
 #
 # NOTE: declare unit test cases here all source should have adequate test cases whether they be mock
@@ -166,7 +166,7 @@ if (NOT MAKE_SISUTIL_LIBRARY_ONLY)
     set(TEST_EXEC "run-unittests-${PROJECT_NAME}")
     add_executable(${TEST_EXEC} ${SISUTIL_TESTS})
     target_include_directories(${TEST_EXEC} PUBLIC ${INCLUDES} ${ORACLE_INCLUDE})
-    target_link_libraries(${TEST_EXEC} PRIVATE ${PROJECT_NAME} stdc++fs extras Threads::Threads)
+    target_link_libraries(${TEST_EXEC} PRIVATE ${PROJECT_NAME} stdc++fs extras Threads::Threads uuid)
   endif()
 endif()
 
@@ -179,7 +179,7 @@ endif()
 if( NOT MAKE_SISUTIL_LIBRARY_ONLY OR MAKE_SISUTIL_LIBRARY_TOOLS)
 add_executable(sisutil_app instances/main.cpp) 
 target_include_directories(sisutil_app PUBLIC ${INCLUDES} ${ORACLE_INCLUDE})
-target_link_libraries(sisutil_app PRIVATE ${PROJECT_NAME} stdc++fs extras Threads::Threads)
+target_link_libraries(sisutil_app PRIVATE ${PROJECT_NAME} stdc++fs extras Threads::Threads uuid)
 endif()
 
 #
