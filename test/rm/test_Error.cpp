@@ -1,18 +1,4 @@
 /**
-* @file version.hpp
-* @author Matt Williams (mattltf@protonmail.com)
-* @brief Adds version support for Cmake script
-* @version 3.2.0
-* @date 2021-08-08
-*
-* @copyright (C) August 8, 2021 Matt Williams
-*
-*/
-
-#ifndef _SISUTIL_VERSION_HPP
-#define _SISUTIL_VERSION_HPP
-
-/**
  * @brief the "MIT/X Consortium License", (adapted for EXPARX.COM)
  *
  * Copyright (C) November 22, 2021 EXPARX INCORPORATED
@@ -30,11 +16,32 @@
  *
  */
 
-#define SISUTIL_VER_MAJOR 0
-#define SISUTIL_VER_MINOR 4
-#define SISUTIL_VER_PATCH 0
+#include <iostream>
+#include <sisutil/game/ChessGame.hpp>
+#include <sisutil/RMServer.hpp>
 
-#define SISUTIL_VERSION \
-  (SISUTIL_VER_MAJOR * 10000 + SISUTIL_VER_MINOR * 100 + SISUTIL_VER_PATCH)
+#include "../vendor/catch.hpp"
 
-#endif// _SISUTIL_VERSION_HPP
+using namespace std;
+using namespace util;
+
+class TestRMServer : public RMServer {
+public:
+
+    virtual int
+        addRM(const std::string& optionsString,
+            const std::string& userName,
+            std::string& password,
+            long serverId = 0) {
+        return 0;
+    };
+    virtual int reopenAll() const { return 0; };
+
+};
+
+SCENARIO("Verify RMServer", "[RMServer]")
+{
+    TestRMServer server;
+    REQUIRE(true);
+}
+
