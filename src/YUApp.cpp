@@ -111,8 +111,16 @@ YUError YUApp::internalError(const std::string& className,
    else
       tmpStrm << " returns " << err;
    //tmpStrm << std::ends;
+
+// /home/perry/.cache/CPM/sisutil/15422c9bb34f1e12b4c68d2763188f2f850b7f21/src/YUApp.cpp:114:27: 
+// warning: object backing the pointer will be destroyed at the end of the full-expression [-Wdangling-gsl]
+//    const char* moreInfo = tmpStrm.str().c_str();
+//                           ^~~~~~~~~~~~~
+// 1 warning generated.
+
    const char* moreInfo = tmpStrm.str().c_str();
-   YUAppError retVal(YUAppError::YUAPP_INTERNAL_ERROR, moreInfo);
+   std::string dup(moreInfo);
+   YUAppError retVal(YUAppError::YUAPP_INTERNAL_ERROR, dup);
    // give back dealloc responsiblity for *moreInfo
    //tmpStrm.rdbuf()->freeze(0);  // stringstream has no freeze() method (internal storage is a string object not a char array)
    return YUError(retVal);

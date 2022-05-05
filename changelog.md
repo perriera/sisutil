@@ -5,7 +5,7 @@
 > and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).</br>
 > To add a tag to the git repository do:
 >
-> > git tag -a v0.4.3 -m "Clean compile"</br>
+> > git tag -a v0.4.4 -m "Fixed memory leak"</br>
 > > git push origin v0.4.3
 
 IMPORTANT:
@@ -31,6 +31,10 @@ Correct URL for github, (for source compare)</br>
 Adding mock test cases </br>
 Adding unit test cases </br>
 Updated README.md accordingly</br>
+
+#### 0.4.4 (2021-05-04)
+### Fixed
+- Possible memory leak
 
 #### 0.4.3 (2021-05-02)
 ### Fixed
@@ -105,7 +109,8 @@ Updated README.md accordingly</br>
 ### Removed
 - Conan package manager deprecated
 
-[unreleased]: https://github.com/perriera/sisutil/compare/v0.4.3...HEAD
+[unreleased]: https://github.com/perriera/sisutil/compare/v0.4.4...HEAD
+[0.4.4]: https://github.com/perriera/sisutil/compare/v0.4.3...v0.4.4
 [0.4.3]: https://github.com/perriera/sisutil/compare/v0.4.2...v0.4.3
 [0.4.2]: https://github.com/perriera/sisutil/compare/v0.4.1...v0.4.2
 [0.4.1]: https://github.com/perriera/sisutil/compare/v0.4.0...v0.4.1
