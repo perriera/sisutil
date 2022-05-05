@@ -36,7 +36,7 @@ Updated README.md accordingly</br>
 ### Fixed
 - Ported test cases
 
-#### 0.5.0 (2021-05-04)
+#### 0.5.1 (2021-05-04)
 ### Fixed
 - Removed register
 
