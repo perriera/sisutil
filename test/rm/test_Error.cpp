@@ -29,10 +29,10 @@ class TestRMServer : public RMServer {
 public:
 
     virtual int
-        addRM(const std::string& optionsString,
-            const std::string& userName,
-            std::string& password,
-            long serverId = 0) {
+        addRM(const std::string& /*optionsString*/,
+            const std::string& /*userName*/,
+            std::string& /*password*/,
+            long /*serverId = 0*/) {
         return 0;
     };
     virtual int reopenAll() const { return 0; };

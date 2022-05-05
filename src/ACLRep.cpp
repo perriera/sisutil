@@ -16,7 +16,7 @@ const char* ACLRep::RPCMgmtFnMap[] = {
 // Caller must delete return value. used by rpc_mgmt_authorization_fn_t see
 // rpc_mgmt_set_authorization_fn(3rpc)
 
-ACL* ACLRep::lookupRPCMgmtFn(const unsigned32 requestedMgmtOperation) const {
+ACL* ACLRep::lookupRPCMgmtFn(const unsigned32) const {
 	//if ((requestedMgmtOperation < 0) || 
 	//		(requestedMgmtOperation > rpc_c_mgmt_stop_server_listen))
 	//	return NULL;
