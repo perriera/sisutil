@@ -14,7 +14,7 @@ const std::string Error::severityText() const {
 
 Error& Error::operator = (const Error& d) {
 	if (this != &d) {
-		int temp;
+		// int temp;
 		//std::cerr << "Error::operator = : setting myErrorStatus = " << d.value() << std::endl;
 		//temp = d.value();myErrorStatus = temp;
 		myErrorStatus = d.value();

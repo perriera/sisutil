@@ -23,7 +23,7 @@ std::ostream& YUError::displayOn(std::ostream& os) const {
 
 const std::string YUError::text() const {
 	return rep ? rep->err->text() : std::string("");
-};
+}
 
 YUError::YUError(const YUError& e) : rep(NULL) {
 	rep = e.rep;
@@ -43,7 +43,9 @@ Error::SeverityLevel YUError::severity() const {
 }
 
 Error::ErrorStatus YUError::value() const {
-	return rep ? rep->err->value() : Error::OK;	// default to OK
+	if (rep)
+		return rep->err->value();
+	return Error::OK;	// default to OK
 }
 
 YUError::YUError_REP::YUError_REP(const Error* e)

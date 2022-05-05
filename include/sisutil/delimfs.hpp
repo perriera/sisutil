@@ -10,23 +10,23 @@
 
 class delim_ifstream : public std::ifstream {
 public:
-   delim_ifstream(const std::string& aFileName, const char theDelim);
-   virtual ~delim_ifstream();
+  delim_ifstream(const std::string& aFileName, const char theDelim);
+  virtual ~delim_ifstream();
 
-	friend delim_ifstream& operator >> (delim_ifstream& rhs, char *outBuffer);
+  friend delim_ifstream& operator >> (delim_ifstream& rhs, char* outBuffer);
 
 protected:
-   inline const char delim() const {return myDelim;}
-   inline const std::string& filename() const {return myFilename;}
-   char *myFileBuff;
+  inline char delim() const { return myDelim; }
+  inline const std::string& filename() const { return myFilename; }
+  char* myFileBuff;
 
 private:
-   delim_ifstream();									               // disable default ctor
-   delim_ifstream(const delim_ifstream&);                   // disable copy ctor
-   delim_ifstream& operator = (const delim_ifstream&);      // disable op=
-   const char myDelim;
-   std::string myFilename;
-   enum LENGTHENUM {BUFFER_LENGTH = 5120} LENGTH;
+  delim_ifstream();									               // disable default ctor
+  delim_ifstream(const delim_ifstream&);                   // disable copy ctor
+  delim_ifstream& operator = (const delim_ifstream&);      // disable op=
+  const char myDelim;
+  std::string myFilename;
+  enum LENGTHENUM { BUFFER_LENGTH = 5120 } LENGTH;
 };
 
 class delim_ofstream : public std::ofstream {
@@ -34,18 +34,18 @@ public:
   delim_ofstream(const std::string& theFileName, const char theDelim);
   ~delim_ofstream();
 
-	friend delim_ofstream& operator << (delim_ofstream& rhs, const char *inBuffer);
-	// inBuffer passed to operator << () min length
-	enum LENGTHENUM {MIN_BUFFER_LENGTH = 1024} LENGTH;
+  friend delim_ofstream& operator << (delim_ofstream& rhs, const char* inBuffer);
+  // inBuffer passed to operator << () min length
+  enum LENGTHENUM { MIN_BUFFER_LENGTH = 1024 } LENGTH;
 
 protected:
-  inline const char delim() const {return myDelim;}
-  inline const std::string& filename() const {return myFilename;}
+  inline char delim() const { return myDelim; }
+  inline const std::string& filename() const { return myFilename; }
 
 private:
-	delim_ofstream();                                     // disable default c'tor
-	delim_ofstream(const delim_ofstream&);                // disable copy c'tor
-	delim_ofstream& operator = (const delim_ofstream&);   // disable op=
+  delim_ofstream();                                     // disable default c'tor
+  delim_ofstream(const delim_ofstream&);                // disable copy c'tor
+  delim_ofstream& operator = (const delim_ofstream&);   // disable op=
   const char myDelim;
   const std::string myFilename;
 };

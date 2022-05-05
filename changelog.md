@@ -5,8 +5,8 @@
 > and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).</br>
 > To add a tag to the git repository do:
 >
-> > git tag -a v0.4.2 -m "Migrated source"</br>
-> > git push origin v0.4.2
+> > git tag -a v0.4.3 -m "Clean compile"</br>
+> > git push origin v0.4.3
 
 IMPORTANT:
 
@@ -31,6 +31,10 @@ Correct URL for github, (for source compare)</br>
 Adding mock test cases </br>
 Adding unit test cases </br>
 Updated README.md accordingly</br>
+
+#### 0.4.3 (2021-05-02)
+### Fixed
+- Trivial compiler warnings
 
 #### 0.4.2 (2021-05-01)
 ### Added
@@ -101,8 +105,9 @@ Updated README.md accordingly</br>
 ### Removed
 - Conan package manager deprecated
 
-[unreleased]: https://github.com/perriera/sisutil/compare/v0.4.2...HEAD
-[0.4.1]: https://github.com/perriera/sisutil/compare/v0.4.1...v0.4.2
+[unreleased]: https://github.com/perriera/sisutil/compare/v0.4.3...HEAD
+[0.4.3]: https://github.com/perriera/sisutil/compare/v0.4.2...v0.4.3
+[0.4.2]: https://github.com/perriera/sisutil/compare/v0.4.1...v0.4.2
 [0.4.1]: https://github.com/perriera/sisutil/compare/v0.4.0...v0.4.1
 [0.4.0]: https://github.com/perriera/sisutil/compare/v0.3.0...v0.4.0
 [0.3.0]: https://github.com/perriera/sisutil/compare/v0.2.0...v0.3.0
