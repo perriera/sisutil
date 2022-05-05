@@ -6,7 +6,7 @@
 > To add a tag to the git repository do:
 >
 > > git tag -a v0.4.4 -m "Fixed memory leak"</br>
-> > git push origin v0.4.3
+> > git push origin v0.4.4
 
 IMPORTANT:
 
