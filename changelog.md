@@ -5,8 +5,8 @@
 > and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).</br>
 > To add a tag to the git repository do:
 >
-> > git tag -a v0.5.1 -m "Removed register"</br>
-> > git push origin v0.5.1
+> > git tag -a v0.6.0 -m "Ported test cases"</br>
+> > git push origin v0.6.0
 
 IMPORTANT:
 
@@ -31,6 +31,10 @@ Correct URL for github, (for source compare)</br>
 Adding mock test cases </br>
 Adding unit test cases </br>
 Updated README.md accordingly</br>
+
+#### 0.6.0 (2021-05-04)
+### Fixed
+- Ported test cases
 
 #### 0.5.0 (2021-05-04)
 ### Fixed
@@ -117,7 +121,8 @@ Updated README.md accordingly</br>
 ### Removed
 - Conan package manager deprecated
 
-[unreleased]: https://github.com/perriera/sisutil/compare/v0.5.1...HEAD
+[unreleased]: https://github.com/perriera/sisutil/compare/v0.6.0...HEAD
+[0.6.0]: https://github.com/perriera/sisutil/compare/v0.5.1...v0.6.0
 [0.5.1]: https://github.com/perriera/sisutil/compare/v0.5.0...v0.5.1
 [0.5.0]: https://github.com/perriera/sisutil/compare/v0.4.4...v0.5.0
 [0.4.4]: https://github.com/perriera/sisutil/compare/v0.4.3...v0.4.4
