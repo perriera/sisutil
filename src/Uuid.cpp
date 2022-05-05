@@ -6,7 +6,7 @@
 //#include <dce/secidmap.h>
 #include <sisutil/ErrLog.hpp>
 #include <sisutil/DCEError.hpp>
-//#include <GMLock.hpp>
+//#include <sisutil/GMLock.hpp>
 #include <sisutil/Uuid.hpp>
 #include <uuid/uuid.h>
 
